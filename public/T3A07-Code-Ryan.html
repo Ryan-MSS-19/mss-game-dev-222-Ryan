@@ -4,25 +4,29 @@
 <img style="position:absolute; left:25; top:181; width:400; height:400;" src="https://piskel-imgstore-b.appspot.com/img/56bd0887-2100-11ea-94e2-33e6704e597f.gif" id="myImg01" />
 
 
-
 <table border=1> 
 
-<tr><td><input type=button value="Up Left" onclick="{ document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 10  
-document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 10}"></td>                                                      <td><input type=button value="Up" onclick="{ document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 10 }">                       </td><td><input type=button value="Up Right" onclick="{ document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 10  
+<tr><td><input type=button value="&#x2196;" onclick="{ document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 10  
+document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 10}"></td>                                                      <td><input type=button value="&#x2B06;" onclick="{ document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 10 }">                       </td><td><input type=button value="&#x2197;" onclick="{ document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 10  
                                                                                                                                                                                                                                                                                                                                                               document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10}"></td>
 
-<tr><td><input type=button value="Left" onclick="{ document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 10 }"></td>       <td><input type=button value="Reset" onclick="{ document.getElementById('myImg01').style.setposition = parseInt(document.getElementById(myImg01').style.setposition) position= left:25; top:181 }"></td>
+<tr><td><input type=button value="&#x2B05;" onclick="{ document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 10 }"></td>       <td><input type=button value="0" onclick="{ document.getElementById('myImg01').style.setposition = parseInt(document.getElementById(myImg01').style.setposition) position= left:25; top:181 }"></td>
+                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                                                                                             <td><input type=button value="&#x27A1;" onclick="{ document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 }"></td>
 
-                                                                                                                                                                                                                                                                                                                                                             <td><input type=button value="Right" onclick="{ document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 }"></td>
-
-<tr><td><input type=button value="Down Left" onclick="{ document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10  
-document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 10}"></td>                                                      <td><input type=button value="Down" onclick="{ document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 }">                      </td><td><input type=button value="Down Right" onclick="{ document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10  
+<tr><td><input type=button value="&#x2199;" onclick="{ document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10  
+document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 10}"></td>                                                      <td><input type=button value="&#x2B07;" onclick="{ document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 }">                      </td><td><input type=button value="&#x2198;" onclick="{ document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10  
                                                                                                                                                                                                                                                                                                                                                               document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10}"></td>
 </table>
 
-<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<input type=button value="Move 10 pixels
+
+<span id="mySpan01" style="position:absolute; left:100; top:550;"> span
+1</span><br>
+<span id="mySpan02" style="position:absolute; left:200; top:550;"> span
+2</span><br>
+
 
 <input type=button value="Move 10 pixels right" onClick="{
   //alert( parseInt(document.getElementById('mySpan01').style.left) )
@@ -37,7 +41,4 @@ if( myHitOther('mySpan01', 'mySpan02')){
 }
 
 
-
-
-
-
+}">
