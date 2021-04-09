@@ -1,0 +1,96 @@
+ <body onKeyDown"{
+	let myArrowKey = even.keyCode
+	let myAlphaKey = event.key
+
+	if (myArrowKey == 37) {
+	    document.getElementById('mySpan01').innerHTML = 'Hi from onKeyDown left arrow pressed'
+	}
+
+	if (myArrowKey == 'd') {
+	    document.getElementById(mySpan01').innerHTML = 'Hi from onKeyDown d key pressed'
+	}
+}">
+
+<h1 align=center>T3A09-Events-Ryan</h1>
+Output span: <span id=mySpan01">...</span><br><br>
+
+Traditional onclick event: <input type=buton value="onclick event" onclick="{
+   //alert('Hi from onlick');
+   document.getElementByID('mySpan01).innerHTML = 'Hi from onMouseOver'
+}"> <br><br>
+
+This is <b> bold </b> this isn't
+This is <b onMouseOver"{
+   document.getElementById('mySpan01').innerHTML = 'Hi from onMouseOver'
+}"> bold and onMouseOver </b> this isn't<br><br>
+
+old and onMouseOver </b> this isn't<br>
+</body>
+
+<body onKeyDown="{
+	let myArrowKey == 37) {
+	let myAlphaKey =  event.key
+
+	 if (myArrowkey == 37) {
+	    document.getELementById('mySpan01').innerHTML = 'Hi from onKeyDown left arrow pressed'
+	}
+
+	 if (myAlphakey == 'd') {
+	    document.getELementById('mySpan01').innerHTML = 'Hi from onKeyDown d key pressed'
+	}
+}">
+
+<br><br><br><br>
+Output span: <span id='mySpan01'>...</span><br><br>
+
+Traditional onclick event: <input type=button value='onclick event' onclik="{
+  //alert ('Hi from onclick);
+  document.getElementById('mySpan01').innerHTML = 'Hi from onclick'
+}"> <br><br>
+
+This is <b> bold </b> this istn't <br>
+This is<b onMouseOver </b> this isn't <br><br>
+
+</body>
+
+
+
+
+<p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
+Click and hold the text to turn it red let go to make it green.
+</p>
+
+
+
+
+
+<script>
+function mouseDown() {
+  document.getElementById("myP").style.color = "red";
+}
+
+function mouseUp() {
+  document.getElementById("myP").style.color = "green";
+}
+</script>
+<br><br>
+
+
+<body>
+<html>
+Enter your name: <input type="text" id="fname" onblur="myFunction()">
+
+<p>what you type will become uppercase</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+</script>
+
+</body>
+</html>
+
+
+
