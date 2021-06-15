@@ -1,63 +1,41 @@
- <body onKeyDown"{
-	let myArrowKey = even.keyCode
-	let myAlphaKey = event.key
 
-	if (myArrowKey == 37) {
-	    document.getElementById('mySpan01').innerHTML = 'Hi from onKeyDown left arrow pressed'
-	}
 
-	if (myArrowKey == 'd') {
-	    document.getElementById(mySpan01').innerHTML = 'Hi from onKeyDown d key pressed'
-	}
-}">
+<h1 align=centered> T3A09-events-Ryan</h1>
+Output span: <span id="mySpan01">...</span><br><br>
 
-<h1 align=center>T3A09-Events-Ryan</h1>
-Output span: <span id=mySpan01">...</span><br><br>
-
-Traditional onclick event: <input type=buton value="onclick event" onclick="{
-   //alert('Hi from onlick');
-   document.getElementByID('mySpan01).innerHTML = 'Hi from onMouseOver'
+Traditional onclick event: <input type=button value="onclick event" onclick="{
+  //alert('Hi Mr.Ellis');
+   document.getElementById('mySpan01').innerHTML = ' Hola '
 }"> <br><br>
 
-This is <b> bold </b> this isn't
-This is <b onMouseOver"{
-   document.getElementById('mySpan01').innerHTML = 'Hi from onMouseOver'
-}"> bold and onMouseOver </b> this isn't<br><br>
 
-old and onMouseOver </b> this isn't<br>
-</body>
 
-<body onKeyDown="{
-	let myArrowKey == 37) {
-	let myAlphaKey =  event.key
-
-	 if (myArrowkey == 37) {
-	    document.getELementById('mySpan01').innerHTML = 'Hi from onKeyDown left arrow pressed'
-	}
-
-	 if (myAlphakey == 'd') {
-	    document.getELementById('mySpan01').innerHTML = 'Hi from onKeyDown d key pressed'
-	}
-}">
-
-<br><br><br><br>
-Output span: <span id='mySpan01'>...</span><br><br>
-
-Traditional onclick event: <input type=button value='onclick event' onclik="{
-  //alert ('Hi from onclick);
-  document.getElementById('mySpan01').innerHTML = 'Hi from onclick'
+<input type=button value="onMouseOver event" onMouseOver="{
+  //alert('Hi from onMouseOver');
+   document.getElementById('mySpan01').innerHTML = 'hi from onMouseOver'
 }"> <br><br>
 
-This is <b> bold </b> this istn't <br>
-This is<b onMouseOver </b> this isn't <br><br>
+
+<body>
+
+<p>A function is triggered when the user is pressing a key in the input field.</p>
+
+<input type="text" onkeypress="myFunction()">
+<script>
+
+function myFunction() "{
+    alert('You pressed a key inside the input field');
+}"
+</script>
 
 </body>
+
 
 
 
 
 <p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
-Click and hold the text to turn it red let go to make it green.
+Click and hold this text
 </p>
 
 
@@ -80,7 +58,7 @@ function mouseUp() {
 <html>
 Enter your name: <input type="text" id="fname" onblur="myFunction()">
 
-<p>what you type will become uppercase</p>
+<p>whatever you type in the field will become uppercase</p>
 
 <script>
 function myFunction() {
@@ -91,6 +69,100 @@ function myFunction() {
 
 </body>
 </html>
+
+<br><br>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<p id="demo">Double-click me.</p>
+
+<script>
+document.getElementById("demo").ondblclick = function() {myFunction()};
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "I was double-clicked!";
+}
+</script>
+
+</body>
+</html>
+
+
+<br<br<br><br>
+
+
+
+
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+.droptarget {
+  float: left; 
+  width: 100px; 
+  height: 35px;
+  margin: 15px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+</style>
+</head>
+<body>
+
+
+
+
+
+<div class="droptarget">
+  <p id="dragtarget" draggable="true">Drag me!</p>
+</div>
+
+<div class="droptarget"></div>
+
+
+
+<p id="demo"></p>
+
+<script>
+/* Events fired on the drag target */
+document.ondragstart = function(event) {
+  event.dataTransfer.setData("Text", event.target.id);
+};
+
+document.ondrag = function(event) {
+  document.getElementById("demo").innerHTML = "The p element is being dragged";
+};
+
+/* Events fired on the drop target */
+document.ondragover = function(event) {
+  event.preventDefault();
+};
+
+document.ondrop = function(event) {
+  event.preventDefault();
+  if ( event.target.className == "droptarget" ) {
+    var data = event.dataTransfer.getData("Text");
+    event.target.appendChild(document.getElementById(data));
+    document.getElementById("demo").innerHTML = "The p element was dropped";
+  }
+};
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
 
 
 
